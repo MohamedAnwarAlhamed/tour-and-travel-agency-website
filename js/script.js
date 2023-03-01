@@ -49,7 +49,7 @@ videoBtn.forEach(btn => {
 });
 
 
-var swiper = new Swiper(".review-silder", {
+var swiper = new Swiper(".review-slider", {
     spaceBetween: 20,
     loop: true,
     autoplay:{
@@ -68,6 +68,30 @@ var swiper = new Swiper(".review-silder", {
         },
     },
 });
+
+var swiper = new Swiper(".brand-slider", {
+    spaceBetween: 20,
+    loop: true,
+    autoplay:{
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints:{
+        450:{
+            slidesPerView: 2,
+        },
+        640:{
+            slidesPerView: 3,
+        },
+        768:{
+            slidesPerView: 4,
+        },
+        1024:{
+            slidesPerView: 5,
+        },
+    },
+});
+
 
 
 
